@@ -1,5 +1,3 @@
-from collections import deque
-
 def dfs(graph, i, j):
 	dx = [-1,1,0,0]
 	dy = [0,0,-1,1]
@@ -12,13 +10,11 @@ def dfs(graph, i, j):
 				dfs(graph, i+dx[k], j+dy[k])
 		return True
 	return False
-
 graph=[]
 n, m= map(int, input().split())
 for i in range(n):
 	temp = list(map(int, input()))
 	graph.append(temp)
-
 count = 0
 for i in range(n):
 	for j in range(m):
