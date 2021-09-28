@@ -40,7 +40,6 @@ for i in range(n):
 	temp = list(map(int, input()))
 	miro.append(temp)
 visit = [[False for _ in range(m)] for _ in range(n)]
-
 bfs(miro, visit, 0,0,n,m)
 print(miro)
 count = 0
