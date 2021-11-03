@@ -19,5 +19,3 @@ def solution(N, stages):
 	for i in res:
 		answer.append(i[1])
 	return answer
-
-solution(4, [1,1,1,1])
