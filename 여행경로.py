@@ -1,3 +1,4 @@
+# 인터넷 참고함
 from collections import defaultdict
 def solution(tickets):
     answer = []
