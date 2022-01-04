@@ -5,7 +5,6 @@ def solution(clothes):
     for key, value in clothes:
         combi[value].append(key)
         answer+=1
-    key_len = len(combi.keys())
     answer = 1
     for key in combi.keys():
         answer *= (len(combi[key])+1)
