@@ -10,10 +10,10 @@ def solution(genres, plays):
     for i in d.keys():
         temp = 0
         for j in d[i]:
-            temp += j[0]
+            temp += j[0] # 장르별 총 곡 플레이수 합산한 것을 딕셔너리 형태로 저장
         g[i] = temp
 
-    g = sorted(g.items(), key = lambda x: -x[1])
+    g = sorted(g.items(), key = lambda x: -x[1]) # 정렬 lambda를 사용해야 잘 됨..
     for i in d.keys():
         d[i] = sorted(d[i], key = lambda x:(-x[0], x[1]))
     for i in g:
@@ -22,7 +22,7 @@ def solution(genres, plays):
 
         for j in d[i]:
             print(j)
-            if count>2: break
+            if count>2: break # 최대 두곡 answer에 넣어야함
             else:
                 answer.append(j[1])
                 count +=1
