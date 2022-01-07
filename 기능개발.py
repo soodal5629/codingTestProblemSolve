@@ -4,7 +4,7 @@ def solution(progresses, speeds):
     answer = []
     time = deque()
     for i in range(len(progresses)):
-        temp = math.ceil((100 - progresses[i])/speeds[i])
+        temp = math.ceil((100 - progresses[i])/speeds[i]) # (//) 로 계산하면 안됨!!
         time.append(temp)
     q = deque()
     if len(time)==1:
