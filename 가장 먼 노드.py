@@ -9,7 +9,7 @@ def solution(n, edge):
         a,b = i
         graph[a].append(b)
         graph[b].append(a)
-        q.append((1,1))
+    q.append((1,1))
     while q:
         c, start = heapq.heappop(q)
         for i in graph[start]:
